@@ -100,16 +100,17 @@ section{
     padding: 70px 14% 60px;
 }
 .home{
+    padding-top: 6rem;
     position: relative;
     height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 2rem;   
 }
 .home-img img{
-    width: 100%;
+    width: 110%;
     height: auto;
 }
 .home-text h1{
@@ -209,4 +210,90 @@ header.sticky{
     font-size: var(--p-font);
     line-height: 30px;
     margin-bottom: 3rem;
+}
+
+/* menu  */
+.middle-text{
+    text-align: center;
+}
+.middle-text h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+.middle-text h2{
+    font-size: var(--h2-font);
+}
+.menu-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.row{
+    position: relative;
+    padding: 10px 35px 40px;
+    background: var(--other-color);
+    border-radius: 3rem;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+.row h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.row p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 1.1rem;
+}
+.in-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.in-text .price h6{
+    font-size: 17px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.in-text .s-btnn a{
+    display: inline-block;
+    padding: 9px 23px;
+    background: var(--bg-color);
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 3rem;
+    transition: all .5s ease;
+}
+.in-text .s-btnn a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: #921A40 0px 2px 10px;
+}
+.top-icon{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+.top-icon i{
+    font-size: 22px;
+    color: var(--main-color);
+}
+.row-btn{
+    text-align: center;
+    margin-top: 6rem;
+}
+.row img:hover{
+    transform: scale(1.1);
 }
