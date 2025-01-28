@@ -26,6 +26,15 @@ body{
     color: var(--text-color);
 }
 
+/* scroll  ui */
+::-webkit-scrollbar{
+    width: .4rem;
+    background-color: var(--other-color);
+  }
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+  }
+
 header{
     position: fixed;
     width: 100%;
@@ -110,7 +119,7 @@ section{
     gap: 2rem;   
 }
 .home-img img{
-    width: 110%;
+    width: 100%;
     height: auto;
 }
 .home-text h1{
@@ -157,40 +166,9 @@ header.sticky{
     background: var(--other-color);
 }
 
-.container{
-    padding: 30px 14% 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    gap: 2rem;
-    text-align: center;
-    
-}
-.container-box{
-    padding: 35px 40px;
-    background: var(--other-color);
-    border-radius: 3rem;
-}
-.container-box img{
-    width: 100%;
-    max-width: 30px;
-    height: auto;
-}
-.container-box h3{
-    font-size: 15px;
-    margin: 16px 0;
-}
-.container-box a{
-    color: var(--second-color);
-    font-size: 12px;
-    letter-spacing: 1px;
-    transition: all .5s ease;
-}
-.container-box a:hover{
-    color: var(--main-color);
-}
-
 /* about  */
 .about{
+    padding-top: 10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -381,18 +359,12 @@ header.sticky{
         padding: 50px 4% 40px;
         transition: .2s;
     }
-    .container{
-        padding: 30px 4% 50px;
-    }
 }
 @media (max-width : 1180px){
     :root{
         --big-font:4rem;
         --h2-font: 2.2rem;
         --p-font: 15px;
-    }
-    .home{
-        height: 100vh;
     }
 }
 @media (max-width : 1080px){
@@ -420,10 +392,7 @@ header.sticky{
         top: 100%;
     }
     .home{
-        height: 70vh;
-    }
-    .container{
-        padding-top: 15rem;
+        height: 60vh;
     }
 }
 @media (max-width : 1045px){
@@ -443,13 +412,13 @@ header.sticky{
         height: auto;
     }
     .home{
-        height: 40vh;
+        height: 60vh;
     }
 }
 @media (max-width : 860px){
     .home{
         padding-top: 10rem;
-        height: 90vh;
+        height: 100vh;
         grid-template-columns: 1fr;
     }
     .home-img{
@@ -471,8 +440,8 @@ header.sticky{
     }
 }
 @media (max-width : 520px){
-    .container{
-        padding-top: 20rem;
+    .home{
+        height: 100vh;
     }
     .contact-img{
         gap: 1.5rem;
@@ -501,17 +470,14 @@ header.sticky{
         height: 60vh;
     }
 }
-@media (max-width : 440px){
+@media (max-width : 400px){
     .home{
-        height: 70vh;
-        gap: .1rem;
+        height: 35vh;
+    }
+    .home-img img{
+        display: none;
+    }
+    .about-img img{
+        display: none;
     }
 }
-
-::-webkit-scrollbar{
-    width: .4rem;
-    background-color: var(--other-color);
-  }
-::-webkit-scrollbar-thumb{
-    background-color: var(--main-color);
-  }
