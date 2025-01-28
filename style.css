@@ -392,7 +392,7 @@ header.sticky{
         --p-font: 15px;
     }
     .home{
-        height: 90vh;
+        height: 100vh;
     }
 }
 @media (max-width : 1080px){
@@ -420,7 +420,7 @@ header.sticky{
         top: 100%;
     }
     .home{
-        height: 100vh;
+        height: 70vh;
     }
     .container{
         padding-top: 15rem;
@@ -507,3 +507,11 @@ header.sticky{
         gap: .1rem;
     }
 }
+
+::-webkit-scrollbar{
+    width: .4rem;
+    background-color: var(--other-color);
+  }
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+  }

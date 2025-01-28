@@ -34,4 +34,6 @@ const sr = ScrollReveal({
  sr.reveal ('.about-text', {delay:200});
 
  sr.reveal ('.middle-text', {});
- sr.reveal ('.row-btn, .menu-content, .contact', {delay:200});
+ sr.reveal ('.row-btn, .menu-content', {delay:100});
+
+ sr.reveal ('.contact', {delay:200});
