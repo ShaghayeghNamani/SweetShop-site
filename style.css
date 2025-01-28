@@ -422,6 +422,9 @@ header.sticky{
     .home{
         height: 100vh;
     }
+    .container{
+        padding-top: 15rem;
+    }
 }
 @media (max-width : 1045px){
     :root{
@@ -446,7 +449,7 @@ header.sticky{
 @media (max-width : 860px){
     .home{
         padding-top: 10rem;
-        height: 80vh;
+        height: 90vh;
         grid-template-columns: 1fr;
     }
     .home-img{
@@ -494,10 +497,13 @@ header.sticky{
         --big-font:2.8rem;
         --h2-font: 2.2rem;
     }
+    .home{
+        height: 60vh;
+    }
 }
 @media (max-width : 440px){
     .home{
-        height: 110vh;
+        height: 70vh;
         gap: .1rem;
     }
 }
